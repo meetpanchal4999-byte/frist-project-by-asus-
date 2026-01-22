@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Aviator King - Official Landing Page</title>
+    <meta name="title" content="Avitor King - Official Landing Page">
+    <meta name="description" content="Welcome to the official page of Avitor King. Join my Telegram channel for exclusive content, updates, and community discussions.">
+    <meta name="keywords" content="Avitor King, Telegram channel, exclusive content, community, updates, official page">
+    <meta name="author" content="Avitor King">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://avitor-king.com/">
+    <meta property="og:title" content="Avitor King - Official Landing Page">
+    <meta property="og:description" content="Welcome to the official page of Avitor King. Join my Telegram channel for exclusive content, updates, and community discussions.">
+    <meta property="og:image" content="https://avitor-king.com/images/avitor-king-og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://avitor-king.com/">
+    <meta property="twitter:title" content="Avitor King - Official Landing Page">
+    <meta property="twitter:description" content="Welcome to the official page of Avitor King. Join my Telegram channel for exclusive content, updates, and community discussions.">
+    <meta property="twitter:image" content="https://avitor-king.com/images/avitor-king-twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0c2461, #1e3799, #4a69bd);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .name {
+            font-size: 4.5rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #f6d365, #fda085);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.1;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .divider {
+            width: 200px;
+            height: 4px;
+            background: linear-gradient(to right, #f6d365, #fda085);
+            margin: 0 auto 40px;
+            border-radius: 2px;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f6d365;
+        }
+        
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .button-container {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .telegram-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #0088cc, #1e96c8);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .telegram-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 136, 204, 0.4);
+            background: linear-gradient(to right, #0077b5, #1a8bc1);
+        }
+        
+        .telegram-button:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+        }
+        
+        .telegram-button i {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+        
+        .button-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.2;
+        }
+        
+        .button-text span:first-child {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .button-text span:last-child {
+            font-size: 1.8rem;
+        }
+        
+        .pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 1rem;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #f6d365;
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .name {
+                font-size: 3rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .card {
+                min-width: 100%;
+            }
+            
+            .telegram-button {
+                font-size: 1.2rem;
+                padding: 15px 30px;
+            }
+            
+            .button-text span:last-child {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .telegram-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+            
+            .button-text span:last-child {
+                font-size: 1.3rem;
+            }
+        }
+        
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+            }
+        }
+        
+        .telegram-stats {
+            background: rgba(0, 136, 204, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+        
+        .stats-text {
+            font-size: 1rem;
+            color: #f6d365;
+        }
+        
+        .stats-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1634479597558988');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1634479597558988&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Avitor King</h1>
+            <p class="tagline">Welcome to my official Telegram community</p>
+            <div class="divider"></div>
+        </header>
+        
+        <div class="content">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>Hello! I'm Avitor King. This is my official landing page where you can connect with me and join my Telegram community. I share exclusive content, insights, and updates that you won't find anywhere else.</p>
+                <p>My Telegram channel is where I interact directly with my followers, share daily content, and build a community of like-minded individuals.</p>
+                <div class="telegram-stats">
+                    <p class="stats-text">Join our growing community</p>
+                    <p class="stats-number">1,000+ Members</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Why Join My Telegram?</h2>
+                <p>By joining my Telegram channel, you'll get:</p>
+                <p>✓ Exclusive daily content and updates</p>
+                <p>✓ Direct communication with me</p>
+                <p>✓ Early access to announcements</p>
+                <p>✓ Community discussions</p>
+                <p>✓ Special giveaways and promotions</p>
+                <p>✓ Behind-the-scenes content</p>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="https://t.me/+MDKaPXm6yckyYmU1" target="_blank" class="telegram-button" id="telegramBtn">
+                <div class="pulse"></div>
+                <i class="fab fa-telegram"></i>
+                <div class="button-text">
+                    <span>Click here to join</span>
+                    <span>Avitor King Telegram</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 Avitor King. All rights reserved.</p>
+            <p>Connect with me on other platforms:</p>
+            <div class="social-icons">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Click the button above to join my Telegram channel</p>
+        </div>
+    </div>
+    
+    <script>
+        // Create animated background particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size
+                const size = Math.random() * 10 + 5;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                
+                // Random animation duration
+                const duration = Math.random() * 20 + 10;
+                particle.style.animationDuration = `${duration}s`;
+                
+                // Random delay
+                const delay = Math.random() * 5;
+                particle.style.animationDelay = `${delay}s`;
+                
+                // Random opacity
+                const opacity = Math.random() * 0.5 + 0.1;
+                particle.style.opacity = opacity;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Create particles when page loads
+        window.addEventListener('load', createParticles);
+        
+        // Track Telegram button clicks with Meta Pixel
+        const telegramBtn = document.getElementById('telegramBtn');
+        telegramBtn.addEventListener('click', function(e) {
+            // Track the button click event in Facebook Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Telegram Button Click',
+                    content_category: 'Conversion',
+                    value: 1.0,
+                    currency: 'USD'
+                });
+                
+                fbq('track', 'Subscribe', {
+                    content_name: 'Avitor King Telegram',
+                    content_category: 'Subscription'
+                });
+            }
+            
+            // Optional: You can add Google Analytics tracking here too
+            console.log('Telegram button clicked - redirecting to: https://t.me/+MDKaPXm6yckyYmU1');
+            
+            // You can also add a small delay to ensure tracking is sent
+            setTimeout(() => {
+                // The link will naturally redirect, but we're confirming
+                window.location.href = this.href;
+            }, 200);
+        });
+        
+        // Track time spent on page
+        let timeSpent = 0;
+        setInterval(() => {
+            timeSpent++;
+            // If user spends more than 30 seconds, track as engaged view
+            if (timeSpent === 30) {
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'ViewContent', {
+                        content_name: 'Avitor King Landing Page',
+                        content_category: 'Engagement',
+                        time_spent: 30
+                    });
+                }
+            }
+        }, 1000);
+        
+        // Track scroll depth
+        window.addEventListener('scroll', function() {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            // Track 25%, 50%, 75%, 100% scroll
+            if (scrollPercentage > 25 && scrollPercentage < 30) {
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'ScrollDepth', {depth: '25%'});
+                }
+            }
+            if (scrollPercentage > 50 && scrollPercentage < 55) {
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'ScrollDepth', {depth: '50%'});
+                }
+            }
+            if (scrollPercentage > 75 && scrollPercentage < 80) {
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'ScrollDepth', {depth: '75%'});
+                }
+            }
+        });
+        
+        // Animated counter for Telegram members
+        function animateCounter() {
+            const counter = document.querySelector('.stats-number');
+            let current = 0;
+            const target = 1250; // You can update this number
+            const increment = target / 50;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                counter.textContent = Math.floor(current).toLocaleString() + '+ Members';
+            }, 40);
+        }
+        
+        // Start counter animation when page loads
+        window.addEventListener('load', animateCounter);
+    </script>
+</body>
+</html>
